@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Checkout</title>
+  <link rel="stylesheet" href="checkout.css">
+</head>
+
+<body>
+  <center>
+  <h1>Checkout</h1>
+  <h2>Selected Phone/Plan:</h2>
+  <p id="selected-phone"></p>
+  <h2>Billing Details:</h2>
+
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="John M. Doe" /><br />
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="john@example.com" /><br />
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" placeholder="123 Apple St" /><br />
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" placeholder="Windsor" /><br />
+    <label for="Province">Province:</label>
+    <input type="text" id="province" name="province" placeholder="Ontario" /><br />
+    <label for="zip">Zip Code:</label>
+    <input type="text" id="zip" name="zip" placeholder="E4W 9RT" /><br />
+    <button type="submit">Finish Checkout</button>
+    <button type="button" onclick="window.location.href='phones.html'">Cancel</button>
+    <img src="Artboard_1-3-removebg-preview.png" alt="Logo" width="150" align="right">
+
+
+  </form>
+    <center>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const product = urlParams.get("product");
+    const price = urlParams.get("price");
+    const selectedPhoneElement = document.getElementById("selected-phone");
+    selectedPhoneElement.innerText = product + " - " + price;
+    const titleElement = document.querySelector("h3");
+
+    const title = titleElement.innerText;
+
+    document.getElementById("product-title").innerText = title;
+  </script>
+</body>
+
+</html>

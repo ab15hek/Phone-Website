@@ -1,0 +1,185 @@
+header .logo-wrapper a .logo-content {
+    display: flex;
+    align-items: center;
+} 
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('Kanit-MediumItalic.ttf') format('truetype');
+}
+  
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'MyCustomFont', sans-serif;
+}
+
+header .logo-wrapper a .logo-content img:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+} 
+header .logo-wrapper a .logo-content img{
+    padding-right: 10px;   
+}
+
+header .logo-wrapper a .logo-content h1 {
+    font-size: 2em;
+    color: white;
+    margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+header .logo-wrapper a {
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+} 
+nav a:hover {
+    background-color: black;
+    color: white; 
+    padding: 5px; 
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+.products {
+    list-style-type: none;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.products li { 
+    margin: 30px;
+    flex-basis: 300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    align-items: center;
+    text-align: center;
+    top: 0;
+} 
+.products li img{
+    padding-top: 10px;
+}
+.products li p {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-out;
+} 
+.products li:hover p {
+    max-height: 1000px;
+    transition: max-height 2s ease-in;
+  }  
+  
+.products li:last-child {
+    margin-right: 0;
+}
+
+.products img {
+    max-width: 100%;
+    height: auto;
+}
+
+.products h3 { 
+    padding-top: 20px;
+    margin-top: 0;
+}
+
+.products li button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #444;
+}
+footer {
+    background-color: #ccc;
+    color: #333;
+    text-align: center;
+    padding: 20px; 
+    font-style: italic;
+}   
+.products img{
+    padding-bottom: 5%;
+} 
+.add-to-cart {
+    margin-top: 10px; 
+} 
+#FirstImage {
+    padding-top: 15px; 
+}  
+#SecondText{
+    padding-bottom: 10px;
+} 
+#ThirdImage{
+    padding-top: 15px;
+}
+h1{
+    font-size: 3rem;
+  } 
+#FourthImage{
+    margin-bottom: 10px;
+} 
+#ThirdText{
+    margin-top: -5px;
+} 
+#FithText{
+    margin-top: -3px;
+}

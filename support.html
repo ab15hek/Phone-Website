@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phone Shop</title>
+  <link rel="stylesheet" href="web.css">
+  <header>
+    <header>
+      <div class="logo-wrapper">
+        <a href="about.html">
+          <div class="logo-content">
+            <img src="Artboard_1-3-removebg-preview.png" alt="Logo" width="150">
+            <h1>Phone Store</h1>
+          </div>
+        </a>
+      </div>
+    </header>
+
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="phones.html">Phones</a></li>
+        <li><a href="accessories.html">Accessories</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="citations.html">Citations</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <section id="home">
+
+    <div class="container">
+      <h2>Welcome to our support page! Here, you can find solutions to any issues you may be experiencing with our
+        products. Feel free to browse our support articles or contact us directly for further assistance.</h2>
+    </div>
+  </section>
+  <br>
+  <br><br>
+  <br>
+  <h2>Commmon Problems</h2>
+  <section>
+
+    <div class="support">
+      <h3>phone</h3>
+      <p>Description 1</p>
+      <a href="#phones" id="phones-link" class="button">more info</a>
+    </div>
+
+
+    <div class="support">
+
+      <h3>Accessory </h3>
+
+      <a href="#accessory" id="accessory-link" class="button">more info</a>
+    </div>
+
+    <div class="support">
+
+      <h3>Forgot Password</h3>
+      <p>Description 2</p>
+      <a href="#forgot-password" id="forgot-password-link" class="button">more info</a>
+    </div>
+
+    <div class="support">
+
+      <h3>Repair</h3>
+      <p>Description 2</p>
+      <a href="#repair" id="repair-link" class="button">more info</a>
+    </div>
+
+    <div class="support">
+
+      <h3>Bulling Issue</h3>
+      <p>Description 2</p>
+      <a href="#billing" id="billing-link" class="button">more info</a>
+    </div>
+
+
+
+    <div class="support">
+
+      <h3>contact us</h3>
+      <p>Description 2</p>
+      <a href="#contact-us" id="contact-us-link" class="button">more info</a>
+    </div>
+
+
+  </section>
+
+  <br>
+  <br><br>
+  <br>
+
+  <script>
+    document.getElementById("phones-link").addEventListener("click", function (event) {
+      event.preventDefault();
+      var section = document.getElementById("phones");
+      section.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    });
+    document.getElementById("accessory-link").addEventListener("click", function (event) {
+      event.preventDefault();
+      var section = document.getElementById("accessory");
+      section.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    });
+
+    document.getElementById("forgot-password-link").addEventListener("click", function (event) {
+      event.preventDefault();
+      var section = document.getElementById("forgot-password");
+      section.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    });
+
+    document.getElementById("repair-link").addEventListener("click", function (event) {
+      event.preventDefault();
+      var section = document.getElementById("repair");
+      section.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    });
+
+    document.getElementById("billing-link").addEventListener("click", function (event) {
+      event.preventDefault();
+      var section = document.getElementById("billing");
+      section.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    });
+
+    document.getElementById("contact-us-link").addEventListener("click", function (event) {
+      event.preventDefault();
+      var section = document.getElementById("contact-us");
+      section.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    });
+  </script>
+
+  <section id="phones">
+    <div class="container">
+      <h2>Phones</h2>
+      <dl>
+        <dt>Backup</dt>
+        <dd>Back up your turbo device regularly to ensure that your data is safe and can be restored if needed.</dd>
+        <dt>Software Updates</dt>
+        <dd>Keep your turbo device up to date with the latest software updates to take advantage of new features and
+          security updates.</dd>
+        <dt>Digital Wellbeing Features</dt>
+        <dd>Utilize the built-in digital wellbeing features: Turbo has several built-in features to help you manage your
+          device usage, like setting app limits, tracking screen time, and enabling grayscale mode.</dd>
+        <dt>Quick Start</dt>
+        <dd>Take advantage of Quick Start to easily transfer your data from your old device to your new turbo device.
+        </dd>
+      </dl>
+    </div>
+  </section>
+  <section id="accessory">
+    <div class="container">
+      <h2>Accessory</h2>
+      <dl>
+        <dt>Software Updates</dt>
+        <dd>Keep your turbo device up to date with the latest software updates to take advantage of new features and
+          security updates.</dd>
+
+        <dt>Quick Start</dt>
+        <dd>Take advantage of Quick Start to easily transfer your data from your old device to your new turbo device.
+        </dd>
+      </dl>
+
+    </div>
+  </section>
+  <section id="forgot-password">
+    <div class="container">
+      <h2>Forgot Password</h2>
+      <p>To reset your password, please follow these steps:</p>
+      <ol>
+        <li>Go to the login page of our website and click on the "forgot password" link.</li>
+        <li>Enter the email address associated with your account and click on the "reset password" button.</li>
+        <li>Check your email inbox for a password reset link.</li>
+        <li>Click on the link in the email and follow the instructions to reset your password.</li>
+        <li>Once you have reset your password, you should be able to log in to your account using your new password.
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="repair">
+    <div class="container">
+      <h2>Repair</h2>
+      <p>To request a repair for your Turbo product, please follow these steps:</p>
+      <ol>
+        <li>Send your Turbo product for repair through our online or phone service.</li>
+        <li>We'll arrange the shipment to a Turbo Repair Center, according to your schedule and without any appointment
+          necessary.</li>
+        <li>This service is available for most Turbo products.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="billing">
+    <div class="container">
+      <h2><span style="font-weight:normal">Billing</span></h2>
+      <lo>
+        <li>
+          We understand that billing issues can be frustrating, but we're here to help.
+        </li>
+        <li>
+          Please browse through our resources and guides to find solutions to common billing problems, or contact our
+          customer support team for personalized assistance.</p>
+
+        </li>
+      </lo>
+    </div>
+  </section>
+
+  <section id="contact-us">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Turbo Inc</p>
+    </div>
+  </footer>
+  </form>
+  </div>
+  </section>
+  <script src="https://replit.com/@AbishekBhandar1/Assignment-5-Phone-Website#java.js"></script>
+
+</head>
+
+
+</html>

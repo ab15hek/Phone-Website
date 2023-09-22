@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <head>
+    <title>Our Products</title>
+    <link rel="stylesheet" href="style_phones.css?v=1" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  </head>
+
+<body>
+  <header>
+    <div class="logo-wrapper">
+      <a href="about.html">
+        <div class="logo-content">
+          <img src="Artboard_1-3-removebg-preview.png" alt="Logo" width="150" />
+          <h1>Phone Store</h1>
+        </div>
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="phones.html">Phones</a></li>
+        <li><a href="accessories.html">Accessories</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="citations.html">Citations</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h1>Our Products</h1>
+      <ul class="products">
+        <li>
+          <img id="FirstImage" src="Phone 1 -R.png" alt="Phone1" />
+          <h3 id="FirstText">Turbo 12 Pro</h3>
+          <p>
+            The Turbo 12 Pro is the newest edition of the famous Turbo series.
+            It has many improved camera systems and can give fast operating
+            speeds. Perfect for customization!
+          </p>
+          <h4>Our Price: 899$</h4>
+          <a href="checkout.html?product=Turbo%2012%20Pro&price=899"><button>Buy Now</button></a>
+        </li>
+        <li>
+          <img id="SecondImage" src="Phone 2- R -Edit.png" alt="Phone 2" />
+          <h3 id="SecondText">Turbo Ultra 4</h3>
+          <p>
+            Explore the new tech innovation when it comes to the new Turbo Ultra 4. With its newley upgraded Action
+            Mode, taking clear and smooth videos for outdoor acitivtes. And not to mention its 2 terabyte storage for
+            all the photos and videos you want!
+          </p>
+          <h4>Our Price: 999$</h4>
+          <a href="checkout.html?product=Turbo%20Ultra%204&price=999"><button>Buy Now</button></a>
+        </li>
+        <li>
+          <img id="ThirdImage" src="Phone 3- R.png" alt="Phone 3" />
+          <h3 id="ThirdText">Turbo Note 6</h3>
+          <p>
+            Have a feel of the new Turbo Note 6. With it's new cutting edge technology, and the Pen for drawing, can be
+            used in many ways to satisfy artists!. And not to mention, its newly designed camera to capture lifes best
+            moments!
+          </p>
+          <h4>Our Price: 799$</h4>
+          <a href="checkout.html?product=Turbo%20Note%206&price=799"><button>Buy Now</button></a>
+        </li>
+        <li>
+          <img id="FourthImage" src="Phone 5 -R.png" alt="Phone 4" />
+          <h3 id="FourthText">Turbo Ridge</h3>
+          <p>
+            One of the best phones in the market for life's ruggid moments! With its strong bezels and its new glass
+            screen protection, it can withstand drops ups to 10 meters guaranteed! It also has an IP69 rating, meaning
+            it is safe to use without any worry of scratches!
+          </p>
+          <h4>Our Price: 600$</h4>
+          <a href="checkout.html?product=Turbo%20Ridge&price=600"><button>Buy Now</button></a>
+        </li>
+        <li>
+          <img src="Phone 6 - R.png" alt="Phone 5" />
+          <h3 id="FithText">Turbo Snap 3</h3>
+          <p>
+            If you want the best of the best camera quality, this is the phone for you. Having 4k camera quality, and
+            100 megamixel camera quality, this is without a doubt one of the best for phone photoghaphy on the go!
+          </p>
+          <h4>Our Price: 900$</h4>
+          <a href="checkout.html?product=Turbo%20Snap%203&price=900"><button>Buy Now</button></a>
+        </li>
+      </ul>
+      <script>
+        // get all the phone titles
+        const phoneTitle = document.querySelector('.phone-title');
+        const phoneDescription = document.querySelector('.phone-description');
+
+        phoneTitle.addEventListener('mouseover', () => {
+          phoneDescription.classList.add('show-description');
+        });
+
+        phoneTitle.addEventListener('mouseout', () => {
+          phoneDescription.classList.remove('show-description');
+        });
+      </script>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Turbo Inc</p>
+  </footer>
+</body>
+
+</html>

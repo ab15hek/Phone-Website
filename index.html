@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Phone Store</title>
+  <link rel="stylesheet" href="style.css?">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <header>
+      <div class="logo-wrapper">
+        <a href="about.html">
+          <div class="logo-content">
+            <img src="Artboard_1-3-removebg-preview.png" alt="Logo" width="150">
+            <h1>Phone Store</h1>
+          </div>
+        </a>
+      </div>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="phones.html">Phones</a></li>
+        <li><a href="accessories.html">Accessories</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="citations.html">Citations</a></li>
+      </ul>
+    </nav>
+  </header>
+  <table>
+    <tr>
+      <td>
+        <main>
+          <section>
+            <h1 class="animated-underline">Our Best Deals!</h1>
+            <div class="phone-container">
+              <div class="phone">
+                <img id="phone1" src="Phone 1 -R.png" alt="iPhone">
+                <h3 id="FirstText">Turbo 12 Pro</h3>
+                <p>$899</p>
+                <a href="checkout.html?product=Turbo%2012%20Pro&price=$899"><button id="buy-now-btn">Buy
+                    Now</button></a>
+                <a href="phones.html"><button>More Info</button></a>
+              </div>
+              <div class="phone">
+                <img id="phone2" src="Phone 2- R.png" alt="Samsung">
+                <h3>Turbo Ultra 4</h3>
+                <p>$899</p>
+                <a href="checkout.html?product=Turbo%20Ultra%204&price=$899"><button id="buy-now-btn">Buy
+                    Now</button></a>
+                <a href="phones.html"><button>More Info</button></a>
+              </div>
+              <div class="phone">
+                <img id="phone3" src="Phone 3 - Edit.png" alt="Google Pixel">
+                <h3>Turbo Note 6</h3>
+                <p>$799</p>
+                <a href="checkout.html?product=Turbo%20Note%206&price=$799"><button id="buy-now-btn">Buy
+                    Now</button></a>
+                <a href="phones.html"><button>More Info</button></a>
+              </div>
+            </div>
+
+          </section>
+      </td>
+    <tr>
+      <td>
+        <section>
+          <h1>Our Phone Plans</h1>
+          <div class="plan-container">
+            <div class="plan">
+              <h3>Basic Plan</h3>
+              <p>Unlimited talk and text, 2 GB data</p>
+              <p>$30/month</p>
+              <a href="checkout.html?product=Basic Plan&price=$30/month"><button>Chose Plan</button></a>
+            </div>
+            <div class="plan">
+              <h3>Standard Plan</h3>
+              <p>Unlimited talk and text, 5 GB data</p>
+              <p>$50/month</p>
+              <a href="checkout.html?product=Standard Plan&price=$50/month"><button>Chose Plan</button></a>
+            </div>
+            <div class="plan">
+              <h3>Premium Plan</h3>
+              <p>Unlimited talk and text, 10 GB data</p>
+              <p>$80/month</p>
+              <a href="checkout.html?product=Premium Plan&price=$80/month"><button>Chose Plan</button></a>
+            </div>
+          </div>
+          </div>
+        </section>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="review-section">
+          <h2>Customer Reviews</h2>
+          <div class="review">
+            <div class="review-header">
+              <div class="review-rating">
+                <h4>5/5</h4>
+              </div>
+              <div class="review-author">
+                <span class="author-name">Ashley Cole</span>
+                <span class="author-verified">Verified Buyer</span>
+              </div>
+            </div>
+            <div class="review-content">
+              <b>
+                <i>
+                  "Deliveries were on time, fast, and all in one piece!"
+                </i>
+              </b>
+            </div>
+          </div>
+          <div class="review">
+            <div class="review-header">
+              <div class="review-rating">
+                <h4>5/5</h4>
+              </div>
+              <div class="review-author">
+                <span class="author-name">Harry Kane</span>
+                <span class="author-verified">Verified Buyer</span>
+              </div>
+            </div>
+            <div class="review-content">
+              <italics class="review-text">
+                <b>
+                  "Premium Phones that are very sleek and beautiful!"
+                </b>
+              </italics>
+            </div>
+          </div>
+        </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <br>
+  <br>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <script>
+    var mybutton = document.getElementById("myBtn");
+
+    window.onscroll = function () {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Turbo Inc</p>
+  </footer>
+</body>
+
+</html>

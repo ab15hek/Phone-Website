@@ -1,0 +1,164 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}  
+.phone-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('Kanit-MediumItalic.ttf') format('truetype');
+}
+
+h1, h2, h3, h4, h5, h6, p, table, td, th, label, span {
+  font-family: 'MyCustomFont', sans-serif;
+}  
+h1{
+  font-size: 3rem;
+}
+.phone img {
+  width: 600px; 
+  height: auto; 
+
+  font-size: 3rem;
+   text-align: center;
+}  
+h2{
+  font-size: 2rem;;
+}
+h3{
+  font-size: 1rem; 
+  padding-left: 10px;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+} 
+header .logo-wrapper a .logo-content {
+  display: flex;
+  align-items: center;
+}
+
+header .logo-wrapper a .logo-content img:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+} 
+header .logo-wrapper a .logo-content img{
+  padding-right: 10px;   
+}
+
+header .logo-wrapper a .logo-content h1 {
+  font-size: 2em;
+  color: white;
+  margin-left: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+header .logo-wrapper a {
+  text-decoration: none;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav li {
+	margin-left: 20px;
+} 
+
+nav a:hover {
+  background-color: black;
+  color: white; 
+  padding: 5px;
+}
+
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+main {
+	padding: 20px;
+}
+
+.phone-container {
+	display: flex;
+	flex-wrap: wrap; 
+  margin: 0 auto;
+}
+
+.phone {
+	margin: 20px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	text-align: center; 
+  transition: transform 0.3s ease; 
+  border-radius: 20px;
+
+} 
+#phone1{
+  padding-bottom: 15px; 
+  padding-top:5px;
+} 
+.phone h3 {
+	margin-top: 7px;
+	font-size: 1.2rem;
+}
+
+.phone p {
+	margin-top: 5px;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.phone button {
+	margin-top: 10px;
+	background-color: #333;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.phone button:hover {
+	background-color: #666; 
+} 
+.phone:hover {
+  transform: scale(1.05);
+}
+
+footer {
+	background-color: #ccc;
+	color: #333;
+	text-align: center;
+	padding: 20px; 
+  font-style: italic;
+} 
+
+td {
+  vertical-align: top;
+  padding: 20px;
+}
+
+.featured-phones {
+  width: 70%;
+}
+
+.sample-text {
+  width: 30%;
+} 
